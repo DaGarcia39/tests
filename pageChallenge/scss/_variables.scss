@@ -1,0 +1,14 @@
+$font: 'Texturina', serif;;
+$mainColor: #26798E;
+$secondColor: #63CAA7;
+$thirdColor: #FFC172;
+$fourthColor: #FFE3B3;
+$fifthColor: #cccccc;
+$sixthColor: #C9284F;
+$seventhColor: #4FB762;
+$eighthColor: #666666;
+
+@mixin hoverHeader {
+    color: $sixthColor;
+    font-weight: 900;
+}

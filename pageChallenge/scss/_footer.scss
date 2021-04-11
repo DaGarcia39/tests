@@ -1,0 +1,39 @@
+.footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 50px;
+    padding: 80px 30px;
+    .about {
+        p {
+            text-align: justify;
+        }
+    }
+    .jobs {
+        p {
+            text-align: justify;
+        }
+    }
+    .payments {
+        p {
+            text-align: justify;
+        }
+    }
+    .help {
+        p {
+            text-align: justify;
+        }
+    }
+}
+
+footer {
+    border: 1px solid $fifthColor;
+    text-align: center;
+    padding: 20px;
+    background-color: $mainColor;
+    color: white;
+    p {
+        font-weight: 900;
+        text-transform: uppercase;
+        font-size: 18px;
+    }
+}

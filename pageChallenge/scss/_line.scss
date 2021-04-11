@@ -1,0 +1,10 @@
+.line {
+    border: 1px solid $fifthColor;
+    background-color: $secondColor;
+    h2 {
+        text-align: center;
+        text-transform: uppercase;
+        padding: 10px 0;
+        color: white;
+    }
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <script src="js/prefixfree.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1>Calculadora</h1>
+    <div class="container">
+        <form name="form" class="forms">
+            <div class="inputs">
+                <input type="text" name="textview">
+                <input type="text" name="textviewresult" placeholder="=">
+            </div>
+            <div class="numbers">
+                <input type="button" value="9" name="nine" onclick="insertNumber(9)">
+                <input type="button" value="8" name="eight" onclick="insertNumber(8)">
+                <input type="button" value="7" name="seven" onclick="insertNumber(7)">
+                <input type="button" value="6" name="six" onclick="insertNumber(6)">
+                <input type="button" value="5" name="five" onclick="insertNumber(5)">
+                <input type="button" value="4" name="four" onclick="insertNumber(4)">
+                <input type="button" value="3" name="three" onclick="insertNumber(3)">
+                <input type="button" value="2" name="two" onclick="insertNumber(2)">
+                <input type="button" value="1" name="one" onclick="insertNumber(1)">
+                <input type="button" value="0" name="zero" onclick="insertNumber(0)">
+                <input type="button" value="C" onclick="clean()">
+                <input type="button" value="=" name="equal" onclick="operations()">
+            </div>
+            <div class="operators">
+                <input type="button" value="x" name="multiplication" onclick="insertNumber('*')">
+                <input type="button" value="/" name="divition" onclick="insertNumber('/')">
+                <input type="button" value="-" name="rest" onclick="insertNumber('-')">
+                <input type="button" value="+" name="sum" onclick="insertNumber('+')">
+            </div>
+        </form>
+    </div>
+    <script src="js/calculadora.js"></script>
+</body>
+</html>

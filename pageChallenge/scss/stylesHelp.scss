@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Texturina&display=swap');
+@import 'variables';
+@import 'header';
+@import 'informationHelp';
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: $font;
+}
+
+.container {
+    display: grid;
+    max-width: 80%;
+    margin: 0 auto;
+    border: 1px solid $fifthColor;
+}
+
+
+//Responsive
+@media screen and (max-width: 768px) {
+    header {
+        nav {
+            flex-wrap: wrap;
+        }
+    }
+    .mainInformation {
+        .two {
+            grid-column: 1/-1;
+        }
+        .three {
+            grid-column: 1/-1;
+        }
+    }
+}

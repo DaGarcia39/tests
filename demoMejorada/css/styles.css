@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Jura:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: radial-gradient(1.5em 6.28571em at 1.95em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0.25) 55%, rgba(255, 255, 255, 0) 55%) 0 0, radial-gradient(1.5em 6.28571em at -0.45em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0.25) 55%, rgba(255, 255, 255, 0) 55%) 1.5em 5.5em, radial-gradient(2.3em 4.57143em at 2.99em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0.3) 55%, rgba(255, 255, 255, 0) 55%) 0 0, radial-gradient(2.3em 4.57143em at -0.69em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0.3) 55%, rgba(255, 255, 255, 0) 55%) 2.3em 4em, radial-gradient(3.5em 6.28571em at 4.55em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0.25) 55%, rgba(255, 255, 255, 0) 55%) 0 0, radial-gradient(3.5em 6.28571em at -1.05em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0.25) 55%, rgba(255, 255, 255, 0) 55%) 3.5em 5.5em, radial-gradient(#15ffa5, #00ced1);
+  background-color: mediumspringgreen;
+  background-size: 1.5em 11em, 1.5em 11em, 2.3em 8em, 2.3em 8em, 3.5em 11em, 3.5em 11em, 100% 100%;
+  background-repeat: repeat;
+  font-family: "Jura", sans-serif;
+}
+
+.title h1 {
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2.5em;
+}
+
+.container {
+  background-color: #A9F5E1;
+  width: 70%;
+  max-width: 1200px;
+  margin: 1.6em auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.6em;
+}
+
+.container > .title,
+.container > .logo,
+.container > .content,
+.container > .asidebar,
+.container > .footer,
+.container > div {
+  background: white;
+  padding: 20px;
+  border: 1px solid black;
+}
+
+.container .asidebar {
+  background: #848484;
+  grid-column: span 2;
+  grid-row: 2;
+  color: white;
+}
+.container .asidebar .imgPerfil {
+  text-align: center;
+}
+.container .asidebar .imgPerfil:hover {
+  transform: scale(1.08, 1.08);
+}
+.container .asidebar section p {
+  padding: 3px 0;
+  text-align: justify;
+}
+.container .asidebar h1 {
+  padding: 25px 0;
+  text-transform: uppercase;
+}
+.container .asidebar .section {
+  padding-top: 25px;
+}
+.container .asidebar .section h2 {
+  text-transform: uppercase;
+}
+.container .asidebar .section .sectionImgRedes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.container .asidebar .section .sectionImgRedes .imgRedes {
+  padding: 20px;
+}
+.container .asidebar .section .sectionImgRedes .imgRedes img {
+  height: 50px;
+  width: 50px;
+}
+.container .asidebar .section .sectionImgRedes .imgRedes img:hover {
+  transform: scale(1.08, 1.08);
+}
+
+.container .content {
+  grid-column: span 3;
+}
+
+.content .section {
+  background: #848484;
+  padding: 20px;
+  margin-top: 15px;
+  color: white;
+}
+
+.content .section h1,
+.content .section p {
+  padding: 10px;
+  text-align: justify;
+}
+
+.content .section .imgHobbies {
+  display: flex;
+}
+
+.content .hobbiesImg section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 5px dashed white;
+}
+.content .hobbiesImg section h1 {
+  text-transform: uppercase;
+}
+.content .hobbiesImg section img {
+  padding: 15px;
+  transform: rotate(5deg);
+}
+.content .hobbiesImg section img:hover {
+  transform: scale(1.08, 1.08);
+}
+
+.container .rellenoxd {
+  text-align: center;
+  background-color: #848484;
+  color: white;
+  text-shadow: 2px 2px 8px black;
+}
+
+.container .logo,
+.container .footer {
+  grid-column: 1/6;
+  background: #170B3B;
+  color: white;
+}
+
+.container .footer {
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .container .logo {
+    text-align: center;
+  }
+
+  .container .content {
+    grid-column: 1/-1;
+  }
+
+  .container .asidebar {
+    grid-column: 1/-1;
+  }
+
+  .container .asidebar .imgPerfil img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .container .asidebar .imgPerfil img {
+    width: 100%;
+  }
+
+  .content .hobbiesImg .section .imgHobbies img {
+    width: 100%;
+  }
+}

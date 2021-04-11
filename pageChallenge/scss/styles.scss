@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Texturina&display=swap');
+@import 'variables';
+@import 'header';
+@import 'information';
+@import 'menu';
+@import 'line';
+@import 'footer';
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: $font;
+}
+
+.container {
+    display: grid;
+    max-width: 1400px;
+    margin: 0 auto;
+    border: 1px solid $fifthColor;
+}
+
+
+//Responsive
+@media screen and (max-width: 768px) {
+    header {
+        nav {
+            flex-wrap: wrap;
+        }
+    }
+    .menu {
+        .welcome {
+            grid-column: 1/-1;
+        }
+        .popularDepartments {
+            grid-column: 1/-1;
+        }
+        .clothing {
+            grid-column: 1/-1;
+        }
+        .deals {
+            grid-column: 1/-1;
+        }
+    }
+    .footer {
+        .about {
+            grid-column: 1/-1;
+        }
+        .jobs {
+            grid-column: 1/-1;
+        }
+        .payments {
+            grid-column: 1/-1;
+        }
+        .help {
+            grid-column: 1/-1;
+        }
+    }
+}

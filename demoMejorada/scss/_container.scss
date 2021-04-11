@@ -1,0 +1,22 @@
+.container {
+    background-color: #A9F5E1;
+    width: 70%;
+    max-width: 1200px;
+    margin: 1.6em auto;
+    display: grid;
+    grid: {
+        template-columns: repeat(5, 1fr);
+    }
+    gap: 1.6em;
+}
+
+.container > .title,
+.container > .logo,
+.container > .content,
+.container > .asidebar,
+.container > .footer,
+.container > div {
+    background: $colorBlanco;
+    padding: 20px;
+    border: 1px solid black;
+}

@@ -1,0 +1,12 @@
+.container .logo,
+.container .footer {
+    grid-column: 1/6;
+    background: $colorPrincipal;
+    color: $colorBlanco;
+}
+
+.container .footer {
+    text: {
+        align: center;
+    }
+}

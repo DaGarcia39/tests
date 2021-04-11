@@ -1,0 +1,112 @@
+.slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $fifthColor;
+    width: 100%;
+    height: 500px;
+    position: relative;
+    h1 {
+        text: {
+            transform: uppercase;
+        }
+        font-size: 50px;
+        color: $eighthColor;
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    grid-gap: 20px;
+    padding: 100px 0;
+    background-color: $sixthColor;
+    width: 100%;
+    height: auto;
+    .one {
+        border-radius: 5px;
+        background-color: white;
+        width: 300px;
+        height: 400px;
+        padding: 10px;
+        text-align: center;
+        h1 {
+            letter-spacing: 3px;
+            padding: 50px;
+        }
+        p {
+            font-size: 20px;
+            color: $eighthColor;
+        }
+        a {
+            color: $secondColor;
+            background-color: transparent;
+            border: 3px solid $secondColor;
+            border-radius: 5px;
+            padding: 10px 32px;
+            text-decoration: none;
+        }
+    }
+    .two {
+        border-radius: 5px;
+        background-color: white;
+        width: 300px;
+        height: 400px;
+        padding: 10px;
+        text-align: center;
+        h1 {
+            letter-spacing: 3px;
+            padding: 50px;
+        }
+        p {
+            font-size: 20px;
+            color: $eighthColor;
+        }
+        a {
+            color: $secondColor;
+            background-color: transparent;
+            border: 3px solid $secondColor;
+            border-radius: 5px;
+            padding: 10px 32px;
+            text-decoration: none;
+        }
+    }
+    .three {
+        border-radius: 5px;
+        background-color: white;
+        width: 300px;
+        height: 400px;
+        padding: 10px;
+        text-align: center;
+        h1 {
+            letter-spacing: 3px;
+            padding: 50px;
+        }
+        p {
+            font-size: 20px;
+            color: $eighthColor;
+        }
+        a {
+            color: $secondColor;
+            background-color: transparent;
+            border: 3px solid $secondColor;
+            border-radius: 5px;
+            padding: 10px 32px;
+            text-decoration: none;
+        }
+    }
+}
+
+footer {
+    border: 1px solid $fifthColor;
+    text-align: center;
+    padding: 20px;
+    background-color: $mainColor;
+    color: white;
+    p {
+        font-weight: 900;
+        text-transform: uppercase;
+        font-size: 18px;
+    }
+}

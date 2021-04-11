@@ -1,0 +1,50 @@
+@import 'variables';
+
+header {
+    flex-direction: row;
+    nav {
+        display: flex;
+        justify-content: space-between;
+        .options {
+            padding: 30px 0;
+            ul{
+                display: flex;
+                li {
+                    font-size: 20px;
+                    list-style: none;
+                    align-items: flex-start;
+                    justify-content: space-around;
+                    padding: 0px 20px 0 47px;
+                    a {
+                        color: $mainColor;
+                        text-decoration: none;
+                    }
+                    a:hover {
+                        @include hoverHeader;
+                    }
+                }
+            }
+        }
+        .options2 {
+            padding: 30px 0;
+            text-align: center;
+            ul {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                li {
+                    font-size: 20px;
+                    list-style: none;
+                    padding: 0 48px;
+                    a {
+                        color: $mainColor;
+                        text-decoration: none;
+                    }
+                    a:hover {
+                        @include hoverHeader;
+                    }
+                }
+            }
+        }
+    }
+}

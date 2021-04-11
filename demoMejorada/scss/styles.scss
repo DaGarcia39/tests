@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@500&display=swap');
+
+//variables
+$fuentePrincipal: 'Jura', sans-serif;
+$colorBlanco: rgba(255,255,255,1);
+$colorPrincipal: #170B3B;
+$colorSecundario: #848484;
+
+@mixin animationSize {
+    transform: scale(1.08,1.08);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: radial-gradient(1.5em 6.28571em at 1.95em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0.25) 55%, rgba(255, 255, 255, 0) 55%) 0 0, radial-gradient(1.5em 6.28571em at -0.45em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0.25) 55%, rgba(255, 255, 255, 0) 55%) 1.5em 5.5em, radial-gradient(2.3em 4.57143em at 2.99em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0.3) 55%, rgba(255, 255, 255, 0) 55%) 0 0, radial-gradient(2.3em 4.57143em at -0.69em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0.3) 55%, rgba(255, 255, 255, 0) 55%) 2.3em 4em, radial-gradient(3.5em 6.28571em at 4.55em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0.25) 55%, rgba(255, 255, 255, 0) 55%) 0 0, radial-gradient(3.5em 6.28571em at -1.05em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0.25) 55%, rgba(255, 255, 255, 0) 55%) 3.5em 5.5em, radial-gradient(#15ffa5, #00ced1);
+    background-color: mediumspringgreen;
+    background-size: 1.5em 11em, 1.5em 11em, 2.3em 8em, 2.3em 8em, 3.5em 11em, 3.5em 11em, 100% 100%;
+    background-repeat: repeat;
+    font-family: $fuentePrincipal;
+}
+
+//Header
+@import "header";
+
+//Container
+@import "container";
+
+//Asidebar
+@import "asidebar";
+
+//Content
+@import "content";
+
+//Grid de ayuda
+@import "gridGuia";
+
+//Footer
+@import "footer";
+
+
+
+
+@media screen and (max-width: 768px) {
+    .container .logo {
+        text: {
+            align: center;
+        }
+    }
+    .container .content {
+        grid-column: 1/-1;
+    }
+    .container .asidebar {
+        grid-column: 1/-1;
+    }
+    .container .asidebar .imgPerfil img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .container .asidebar .imgPerfil img {
+        width: 100%;
+    }
+    .content .hobbiesImg .section .imgHobbies img {
+        width: 100%;
+    }
+}

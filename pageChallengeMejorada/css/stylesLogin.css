@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Texturina&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Texturina", serif;
+}
+
+.container {
+  display: grid;
+  max-width: 1400px;
+  margin: 0 auto;
+  border: 1px solid #cccccc;
+}
+
+header {
+  flex-direction: row;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+}
+header nav .options {
+  padding: 30px 0;
+}
+header nav .options ul {
+  display: flex;
+}
+header nav .options ul li {
+  font-size: 20px;
+  list-style: none;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding: 0px 20px 0 47px;
+}
+header nav .options ul li a {
+  color: #666666;
+  text-decoration: none;
+}
+header nav .options ul li a:hover {
+  color: #26798E;
+  font-weight: 900;
+}
+header nav .options2 {
+  padding: 30px 0;
+  text-align: center;
+}
+header nav .options2 ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+header nav .options2 ul li {
+  font-size: 20px;
+  list-style: none;
+  padding: 0 48px;
+}
+header nav .options2 ul li a {
+  color: #666666;
+  text-decoration: none;
+}
+header nav .options2 ul li a:hover {
+  color: #26798E;
+  font-weight: 900;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 80px 0;
+}
+.container .login {
+  border: 5px dashed #cccccc;
+  padding: 100px 0 0 0;
+  text-align: center;
+  width: 600px;
+}
+.container .login h1 {
+  text-transform: uppercase;
+  padding-bottom: 40px;
+}
+.container .login img {
+  border-radius: 50%;
+  padding-bottom: 50px;
+}
+.container .login form {
+  padding: 10px;
+}
+.container .login form .input {
+  border-radius: 5px;
+  height: 50px;
+  width: 500px;
+  text-align: center;
+}
+.container .login form .btn-enviar {
+  border-radius: 5px;
+  width: 500px;
+  height: 50px;
+  background-color: #26798E;
+  font-size: 18px;
+  color: white;
+}
+.container .login a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #666666;
+}
+.container .login .lineFinal {
+  padding-top: 20px;
+  background-color: #C9284F;
+  width: 100%;
+  height: 60px;
+}
+
+@media screen and (max-width: 768px) {
+  header nav {
+    flex-wrap: wrap;
+  }
+
+  .login {
+    width: auto;
+  }
+  .login img {
+    width: auto;
+  }
+}

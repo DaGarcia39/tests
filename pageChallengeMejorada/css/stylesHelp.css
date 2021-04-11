@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Texturina&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Texturina", serif;
+}
+
+.container {
+  display: grid;
+  max-width: 80%;
+  margin: 0 auto;
+  border: 1px solid #cccccc;
+}
+
+header {
+  flex-direction: row;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+}
+header nav .options {
+  padding: 30px 0;
+}
+header nav .options ul {
+  display: flex;
+}
+header nav .options ul li {
+  font-size: 20px;
+  list-style: none;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding: 0px 20px 0 47px;
+}
+header nav .options ul li a {
+  color: #666666;
+  text-decoration: none;
+}
+header nav .options ul li a:hover {
+  color: #26798E;
+  font-weight: 900;
+}
+header nav .options2 {
+  padding: 30px 0;
+  text-align: center;
+}
+header nav .options2 ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+header nav .options2 ul li {
+  font-size: 20px;
+  list-style: none;
+  padding: 0 48px;
+}
+header nav .options2 ul li a {
+  color: #666666;
+  text-decoration: none;
+}
+header nav .options2 ul li a:hover {
+  color: #26798E;
+  font-weight: 900;
+}
+
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #cccccc;
+  width: 100%;
+  height: 500px;
+}
+.slider h1 {
+  text-transform: uppercase;
+  font-size: 50px;
+  color: #666666;
+}
+
+.mainInformation {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  padding: 30px 30px 100px 30px;
+}
+.mainInformation .title {
+  display: flex;
+  align-items: center;
+  grid-column: 1/-1;
+  padding: 10px 0;
+}
+.mainInformation .title h1 {
+  color: #C9284F;
+  text-transform: uppercase;
+}
+.mainInformation .one {
+  grid-column: 1/-1;
+  text-align: justify;
+}
+.mainInformation .one p {
+  color: #666666;
+}
+.mainInformation .two {
+  grid-column: 1/2;
+  text-align: justify;
+}
+.mainInformation .two p {
+  color: #666666;
+}
+.mainInformation .three {
+  grid-column: 2/3;
+  text-align: justify;
+}
+.mainInformation .three p {
+  color: #666666;
+}
+.mainInformation .four {
+  grid-column: 1/-1;
+  text-align: justify;
+}
+.mainInformation .four p {
+  color: #666666;
+}
+
+footer {
+  border: 1px solid #cccccc;
+  text-align: center;
+  padding: 20px;
+  background-color: #26798E;
+  color: white;
+}
+footer p {
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 768px) {
+  header nav {
+    flex-wrap: wrap;
+  }
+
+  .mainInformation .two {
+    grid-column: 1/-1;
+  }
+  .mainInformation .three {
+    grid-column: 1/-1;
+  }
+}

@@ -1,0 +1,282 @@
+@import url("https://fonts.googleapis.com/css2?family=Texturina&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Texturina", serif;
+}
+
+.container {
+  display: grid;
+  max-width: 1400px;
+  margin: 0 auto;
+  border: 1px solid #cccccc;
+}
+
+header {
+  flex-direction: row;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+header nav .options {
+  padding: 30px 0;
+}
+
+header nav .options ul {
+  display: flex;
+}
+
+header nav .options ul li {
+  font-size: 20px;
+  list-style: none;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding: 0px 20px 0 47px;
+}
+
+header nav .options ul li a {
+  color: #666666;
+  text-decoration: none;
+}
+
+header nav .options ul li a:hover {
+  color: brown;
+  font-weight: 900;
+}
+
+header nav .options2 {
+  padding: 30px 0;
+  text-align: center;
+}
+
+header nav .options2 ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+header nav .options2 ul li {
+  font-size: 20px;
+  list-style: none;
+  padding: 0 48px;
+}
+
+header nav .options2 ul li a {
+  color: #666666;
+  text-decoration: none;
+}
+
+header nav .options2 ul li a:hover {
+  color: brown;
+  font-weight: 900;
+}
+
+.information {
+  background-color: #63caa7;
+  padding: 150px 10px;
+}
+.information h1 {
+  text-transform: uppercase;
+  padding: 10px 0;
+  color: white;
+}
+.information p {
+  font-size: 20px;
+  text-align: justify;
+  color: whitesmoke;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  padding: 80px 10px;
+}
+.menu .welcome {
+  border: 1px solid #cccccc;
+  padding: 50px 30px;
+  border-radius: 5px;
+}
+.menu .welcome h2 {
+  text-transform: uppercase;
+  padding-bottom: 35px;
+}
+.menu .welcome a {
+  text-decoration: none;
+  background-color: #26798e;
+  color: white;
+  padding: 5px 25px;
+  border-radius: 5px;
+}
+.menu .welcome a:hover {
+  color: brown;
+  background-color: cadetblue;
+}
+.menu .popularDepartments {
+  border-radius: 5px;
+  border: 1px solid #cccccc;
+  padding: 50px 30px;
+}
+.menu .popularDepartments h2 {
+  text-transform: uppercase;
+  padding-bottom: 15px;
+}
+.menu .popularDepartments .popularDiv {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 5px;
+}
+.menu .popularDepartments .popularDiv div {
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+}
+.menu .popularDepartments .popularDiv div:nth-of-type(1) {
+  background-color: #26798e;
+}
+.menu .popularDepartments .popularDiv div:nth-of-type(3) {
+  background-color: #63caa7;
+}
+.menu .popularDepartments .popularDiv div:nth-of-type(4) {
+  background-color: #ffc172;
+}
+.menu .popularDepartments .popularDiv div:nth-of-type(5) {
+  background-color: #ffe3b3;
+}
+.menu .popularDepartments .popularDiv div:nth-of-type(4) {
+  background-color: #cccccc;
+}
+.menu .clothing {
+  border-radius: 5px;
+  border: 1px solid #cccccc;
+  padding: 50px 30px;
+}
+.menu .clothing h2 {
+  text-transform: uppercase;
+  padding-bottom: 25px;
+}
+.menu .clothing .clothingBox {
+  background-color: #c9284f;
+  border-radius: 5px;
+  width: 100%;
+  height: 300px;
+  color: white;
+  text-align: center;
+  line-height: 300px;
+}
+.menu .clothing a {
+  text-decoration: none;
+  background-color: #26798e;
+  color: white;
+  padding: 5px 25px;
+  border-radius: 5px;
+}
+.menu .deals {
+  border-radius: 5px;
+  border: 1px solid #cccccc;
+  padding: 50px 30px;
+}
+.menu .deals h2 {
+  text-transform: uppercase;
+  padding-bottom: 25px;
+}
+.menu .deals .dealsBox {
+  background-color: #4fb762;
+  border-radius: 5px;
+  color: whitesmoke;
+  width: 100%;
+  height: 250px;
+  text-align: center;
+  line-height: 250px;
+}
+.menu .deals a {
+  text-decoration: none;
+  background-color: #26798e;
+  color: white;
+  padding: 5px 25px;
+  border-radius: 5px;
+}
+
+.line {
+  border: 1px solid #cccccc;
+  background-color: #63caa7;
+}
+.line h2 {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px 0;
+  color: white;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 50px;
+  padding: 80px 30px;
+}
+.footer .about p {
+  text-align: justify;
+}
+.footer .jobs p {
+  text-align: justify;
+}
+.footer .payments p {
+  text-align: justify;
+}
+.footer .help p {
+  text-align: justify;
+}
+
+footer {
+  border: 1px solid #cccccc;
+  text-align: center;
+  padding: 20px;
+  background-color: #26798e;
+  color: white;
+}
+footer p {
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 768px) {
+  header nav {
+    flex-wrap: wrap;
+  }
+
+  .menu .welcome {
+    grid-column: 1/-1;
+  }
+  .menu .popularDepartments {
+    grid-column: 1/-1;
+  }
+  .menu .clothing {
+    grid-column: 1/-1;
+  }
+  .menu .deals {
+    grid-column: 1/-1;
+  }
+
+  .footer .about {
+    grid-column: 1/-1;
+  }
+  .footer .jobs {
+    grid-column: 1/-1;
+  }
+  .footer .payments {
+    grid-column: 1/-1;
+  }
+  .footer .help {
+    grid-column: 1/-1;
+  }
+}

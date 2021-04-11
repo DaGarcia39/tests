@@ -1,0 +1,50 @@
+
+.container .asidebar {
+    background: $colorSecundario;
+    grid: {
+        column: span 2;
+        row: 2;
+    }
+    color: $colorBlanco;
+    .imgPerfil {
+        text-align: center;
+    }
+    .imgPerfil:hover {
+        @include animationSize;
+    }
+    section {
+        p {
+            padding: 3px 0;
+            text-align: justify;
+        }
+    }
+    h1 {
+        padding: 25px 0;
+        text-transform: uppercase;
+    }
+    .section {
+        padding-top: 25px;
+        h2 {
+            text-transform: uppercase;
+        }
+        .sectionImgRedes {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex: {
+                direction: row;
+                wrap: wrap;
+            }
+            .imgRedes {
+                padding: 20px;
+                img {
+                    height: 50px;
+                    width: 50px;
+                }
+                img:hover {
+                    @include animationSize;
+                }
+            }
+        }
+    }
+}

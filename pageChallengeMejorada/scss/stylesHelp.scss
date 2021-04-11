@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Texturina&display=swap');
+
+//Variables
+$font: 'Texturina', serif;;
+$mainColor: #26798E;
+$secondColor: #63CAA7;
+$thirdColor: #FFC172;
+$fourthColor: #FFE3B3;
+$fifthColor: #cccccc;
+$sixthColor: #C9284F;
+$seventhColor: #4FB762;
+$eighthColor: #666666;
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: $font;
+}
+
+.container {
+    display: grid;
+    max-width: 80%;
+    margin: 0 auto;
+    border: 1px solid $fifthColor;
+}
+
+
+@import 'header';
+
+
+//ContentHelp
+.slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $fifthColor;
+    width: 100%;
+    height: 500px;
+    h1 {
+        text: {
+            transform: uppercase;
+        }
+        font-size: 50px;
+        color: $eighthColor;
+    }
+}
+
+.mainInformation {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    padding: 30px 30px 100px 30px;
+    .title {
+        display: flex;
+        align-items: center;
+        grid-column: 1/-1;
+        padding: 10px 0;
+        h1 {
+            color: $sixthColor;
+            text-transform: uppercase;
+        }
+    }
+    .one {
+        grid-column: 1/-1;
+        text-align: justify;
+        p {
+            color: $eighthColor;
+        }
+    }
+    .two {
+        grid-column: 1/2;
+        text-align: justify;
+        p {
+            color: $eighthColor;
+        }
+    }
+    .three {
+        grid-column: 2/3;
+        text-align: justify;
+        p {
+            color: $eighthColor;
+        }
+    }
+    .four {
+        grid-column: 1/-1;
+        text-align: justify;
+        p {
+            color: $eighthColor;
+        }
+    }
+}
+
+footer {
+    border: 1px solid $fifthColor;
+    text-align: center;
+    padding: 20px;
+    background-color: $mainColor;
+    color: white;
+    p {
+        font-weight: 900;
+        text-transform: uppercase;
+        font-size: 18px;
+    }
+}
+
+
+//Responsive
+@media screen and (max-width: 768px) {
+    header {
+        nav {
+            flex-wrap: wrap;
+        }
+    }
+    .mainInformation {
+        .two {
+            grid-column: 1/-1;
+        }
+        .three {
+            grid-column: 1/-1;
+        }
+    }
+}

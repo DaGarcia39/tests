@@ -1,0 +1,39 @@
+.container .content {
+    grid-column: span 3;
+}
+
+.content .section {
+    background: $colorSecundario;
+    padding: 20px;
+    margin-top: 15px;
+    color: $colorBlanco;
+}
+
+.content .section h1,
+.content .section p {
+    padding: 10px;
+    text-align: justify;
+}
+
+.content .section .imgHobbies {
+    display: flex;
+    // animation: all 2s ease;
+}
+
+.content .hobbiesImg section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h1 {
+        text-transform: uppercase;
+    }
+    img{
+        padding: 15px;
+        transform: rotate(5deg);
+    }
+    img:hover {
+        @include animationSize;
+    }
+    border: 5px dashed $colorBlanco;
+}

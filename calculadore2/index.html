@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <script src="js/prefixfree.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1>Calculadora</h1>
+    <div class="container">
+        <form name="form" class="forms">
+            <div class="inputs">
+                <input type="text" name="textview" id="box1">
+                <input type="text" name="textviewresult" placeholder="=" id="box2">
+            </div>
+            <div class="numbers">
+                <input type="button" value="9" name="nine" id="nine">
+                <input type="button" value="8" name="eight" id="eight">
+                <input type="button" value="7" name="seven" id="seven">
+                <input type="button" value="6" name="six" id="six">
+                <input type="button" value="5" name="five" id="five">
+                <input type="button" value="4" name="four" id="four">
+                <input type="button" value="3" name="three" id="three">
+                <input type="button" value="2" name="two" id="two">
+                <input type="button" value="1" name="one" id="one">
+                <input type="button" value="0" name="zero" id="zero">
+                <input type="button" value="C" onclick="clean()">
+                <input type="button" value="=" name="equal" id="equal">
+            </div>
+            <div class="operators">
+                <input type="button" value="*" name="multiplication" id="multiplication">
+                <input type="button" value="/" name="divition" id="divition">
+                <input type="button" value="-" name="rest" id="rest">
+                <input type="button" value="+" name="sum" id="sum">
+            </div>
+        </form>
+    </div>
+    <script src="js/calculadora.js"></script>
+</body>
+</html>
